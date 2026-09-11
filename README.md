@@ -47,3 +47,30 @@ Release the completed software for users.
 
 7. Maintenance:
 Monitor the software, fix issues, and add improvements or updates.
+
+
+5. Program to find the sum of digits until it becomes a single digit
+
+num = int(input("Enter a number: "))
+
+while num >= 10:
+    total = 0
+    while num > 0:
+        total += num % 10
+        num //= 10
+    num = total
+
+print("Single digit sum:", num)
+
+
+6. Program to print first n Fibonacci numbers using recursion
+
+def fibonacci(n):
+    if n <= 1:
+        return n
+    return fibonacci(n - 1) + fibonacci(n - 2)
+
+n = int(input("Enter n: "))
+
+for i in range(n):
+    print(fibonacci(i), end=" ")
